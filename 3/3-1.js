@@ -1,11 +1,11 @@
-let n = 1260
-let count = 0
+let n = 1260;
+let count = 0;
 
-coinTypes = [500, 100, 50, 10]
+coinTypes = [500, 100, 50, 10];
 
-for (coin of coinTypes) {
-  count += (Math.floor(n / coin))
-  n = n % coin
+for (let coin of coinTypes) {
+  count += Math.floor(n / coin);
+  n = n % coin;
 }
 
-console.log(count)
+console.log(count);
