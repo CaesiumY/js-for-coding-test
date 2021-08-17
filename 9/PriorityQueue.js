@@ -13,15 +13,16 @@ class Heap {
   isEmpty = () => this.heap.length === 0;
 
   remove = () => {
+    const root = this.getRoot();
+
     if (this.heap.length > 1) {
-      const root = this.getRoot();
       this.heap[0] = this.heap.pop();
       this.heapifyDown();
-
-      return root;
+    } else {
+      this.heap = [];
     }
 
-    return (this.heap = []);
+    return root;
   };
 
   heapifyUp = () => {
