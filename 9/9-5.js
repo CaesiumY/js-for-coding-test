@@ -8,8 +8,6 @@ const solution = (n, m, start, arr) => {
     graph[i[0]].push([i[1], i[2]]);
   }
 
-  console.log(graph);
-
   const dijkstra = (start) => {
     const heap = new PriorityQueue();
 
