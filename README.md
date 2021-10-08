@@ -69,7 +69,7 @@
 
 ## [12. 구현 문제](12/)
 
-- [2차원 배열 회전하기](12/10.js)
+- [2차원 배열 회전하기](https://github.com/CaesiumY/js-for-coding-test/blob/604822ab38a67531f4f91f7ae4d86c82a948d2ca/12/10.js#L7-L8)
 
 ## [13. DFS/BFS 문제](13/)
 
