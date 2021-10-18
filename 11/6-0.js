@@ -1,17 +1,15 @@
 const solution = (food_times, k) => {
   let foods = food_times
-    .map((time, idx) => {
-      return { id: idx + 1, time };
-    })
+    .map((time, idx) => ({ id: idx + 1, time }))
     .sort((a, b) => a.time - b.time);
+
+  console.log(foods);
   while (foods.length) {
     const foodCount = foods.length;
     const food = foods.shift();
     if (foodCount * food.time <= k) {
       k -= foodCount * food.time;
-      foods = foods.map((f) => {
-        return { id: f.id, time: f.time - food.time };
-      });
+      foods = foods.map((f) => ({ id: f.id, time: f.time - food.time }));
     } else {
       foods.unshift(food);
       const foodIdx = k === 0 ? 0 : k % foods.length;
