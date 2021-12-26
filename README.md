@@ -2,6 +2,11 @@
 
 # 목차
 
+## [1. 자주 사용되는 알고리즘 노트](1/)
+
+- [순열(Permutation)](1/permutation.js) - 순서가 중요
+- [조합(Combination)](1/combination.js) - 순서 중요 X
+
 ## [3. 그리디](3/)
 
 ## [4. 구현](4/)
