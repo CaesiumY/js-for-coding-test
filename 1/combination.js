@@ -1,6 +1,7 @@
-function combination(arr, selectNum) {
+const combination = (arr, selectNum) => {
   const result = [];
   if (selectNum === 1) return arr.map((v) => [v]);
+
   arr.forEach((v, idx, arr) => {
     const fixed = v;
     const restArr = arr.slice(idx + 1);
@@ -9,7 +10,7 @@ function combination(arr, selectNum) {
     result.push(...combineFix);
   });
   return result;
-}
+};
 
 const solution = (arr, n) => {
   return combination(arr, n);

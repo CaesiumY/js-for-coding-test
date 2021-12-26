@@ -1,13 +1,13 @@
 const permutation = (arr, selectNum) => {
-  let result = [];
+  const result = [];
   if (selectNum === 1) return arr.map((v) => [v]);
 
   arr.forEach((v, idx, arr) => {
-    const fixer = v;
-    const restArr = arr.filter((val, index) => index !== idx);
+    const fixed = v;
+    const restArr = arr.filter((_, index) => index !== idx);
     const permuArr = permutation(restArr, selectNum - 1);
-    const combineFixer = permuArr.map((v) => fixer + v);
-    result.push(...combineFixer);
+    const permuFix = permuArr.map((v) => [fixed, ...v]);
+    result.push(...permuFix);
   });
   return result;
 };
@@ -16,5 +16,5 @@ const solution = (arr, n) => {
   return permutation(arr, n);
 };
 
-console.log(solution([0, 1, 7], 2));
-// [ '01', '07', '10', '17', '70', '71' ]
+console.log(solution([0, 1, 7], 3));
+// [ [ 0, 1 ], [ 0, 7 ], [ 1, 0 ], [ 1, 7 ], [ 7, 0 ], [ 7, 1 ] ]
