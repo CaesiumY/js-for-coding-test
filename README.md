@@ -6,6 +6,8 @@
 
 - [순열(Permutation)](1/permutation.js) - 순서가 중요
 - [조합(Combination)](1/combination.js) - 순서 중요 X
+- [소수 판별](1/isPrime.js)
+- [최장 증가 부분 수열](1/LIS.js)
 
 ## [3. 그리디](3/)
 
