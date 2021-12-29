@@ -8,6 +8,8 @@
 - [조합(Combination)](1/combination.js) - 순서 중요 X
 - [소수 판별](1/isPrime.js)
 - [최장 증가 부분 수열](1/LIS.js)
+- [투 포인터(Two-Pointer)](1/twoPointer.js) - 연속된 구간의 합이나 정보
+- [구간 합(Prefix Sum)](1/prefixSum.js)
 
 ## [3. 그리디](3/)
 
