@@ -7,9 +7,9 @@
 - [순열(Permutation)](1/permutation.js) - 순서가 중요
 - [조합(Combination)](1/combination.js) - 순서 중요 X
 - [소수 판별](1/isPrime.js)
-- [최장 증가 부분 수열](1/LIS.js)
+- [최장 증가 부분 수열](1/LIS.js) - O(N^2)에 구하는 증가하는 부분 수열의 최대 길이
 - [투 포인터(Two-Pointer)](1/twoPointer.js) - 연속된 구간의 합이나 정보
-- [구간 합(Prefix Sum)](1/prefixSum.js)
+- [구간 합(Prefix Sum)](1/prefixSum.js) - a부터 b까지 합
 - [최대공약수(GCD), 최소공배수(LCM)](1/GCDandLCM.js) - 유클리드 호제법으로 O(logN)에 구하기
 
 ## [3. 그리디](3/)
