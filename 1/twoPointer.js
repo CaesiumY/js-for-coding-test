@@ -18,4 +18,4 @@ const solution = (m, arr) => {
 };
 
 console.log(solution(5, [1, 2, 3, 2, 5]));
-// 3
+// 연속되는 부분 수열이 5가 될 때의 케이스는 3개
