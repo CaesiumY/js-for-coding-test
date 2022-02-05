@@ -10,6 +10,7 @@
 - [최장 증가 부분 수열](1/LIS.js)
 - [투 포인터(Two-Pointer)](1/twoPointer.js) - 연속된 구간의 합이나 정보
 - [구간 합(Prefix Sum)](1/prefixSum.js)
+- [최대공약수(GCD), 최소공배수(LCM)](1/GCDandLCM.js) - 유클리드 호제법으로 O(logN)에 구하기
 
 ## [3. 그리디](3/)
 
